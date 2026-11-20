@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Console — SkillSwap</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/dashboard.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside id="workspace-sidebar" class="sidebar"></aside>
+
+      <div class="workspace-main">
+        <header class="topbar">
+          <div class="topbar-left">
+            <button type="button" id="mobile-menu-toggle" class="mobile-menu-btn" aria-label="Toggle navigation menu">☰</button>
+            <div id="topbar-breadcrumb" class="breadcrumb">SkillSwap / Admin Console</div>
+          </div>
+          <a href="/discover.html" class="btn btn-secondary btn-sm">View Public Directory</a>
+        </header>
+
+        <main class="page-content">
+          <div id="admin-guard" class="empty-state hidden">
+            <h3>Administrator access required</h3>
+            <p>This console is restricted to SkillSwap platform administrators.</p>
+            <a href="/dashboard.html" class="btn btn-primary btn-sm">Return to Student Dashboard</a>
+          </div>
+
+          <div id="admin-content">
+            <div class="page-intro">
+              <div>
+                <h1>Platform Administration</h1>
+                <p>Monitor student registrations, popular skills, active exchange requests, and moderation reports.</p>
+              </div>
+            </div>
+
+            <section class="kpi-strip" aria-label="Platform statistics">
+              <div class="kpi-box">
+                <div class="kpi-label">Registered Students</div>
+                <div id="adm-students" class="kpi-number tabular-nums">0</div>
+              </div>
+              <div class="kpi-box">
+                <div class="kpi-label">Total Listed Skills</div>
+                <div id="adm-skills" class="kpi-number tabular-nums">0</div>
+              </div>
+              <div class="kpi-box">
+                <div class="kpi-label">Exchange Requests</div>
+                <div id="adm-requests" class="kpi-number tabular-nums">0</div>
+              </div>
+              <div class="kpi-box">
+                <div class="kpi-label">Completed Exchanges</div>
+                <div id="adm-completed" class="kpi-number tabular-nums">0</div>
+              </div>
+            </section>
+
+            <section class="panel" style="margin-bottom: 24px;">
+              <div class="panel-head">
+                <h2>Popular Skills Breakdown</h2>
+              </div>
+              <div id="popular-skills-chart"></div>
+            </section>
+
+            <section class="panel" style="margin-bottom: 24px;">
+              <div class="panel-head">
+                <h2>Reported Accounts & Content</h2>
+              </div>
+              <div class="table-wrap">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th>Account</th>
+                      <th>Reason</th>
+                      <th>Status</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                  <tbody id="adm-reports-tbody"></tbody>
+                </table>
+              </div>
+            </section>
+
+            <section class="panel" style="margin-bottom: 24px;">
+              <div class="panel-head">
+                <h2>Registered Student Accounts</h2>
+              </div>
+              <div class="table-wrap">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th>Student</th>
+                      <th>University & Department</th>
+                      <th>Skills</th>
+                      <th>Completed</th>
+                      <th>Status</th>
+                      <th>Moderation</th>
+                    </tr>
+                  </thead>
+                  <tbody id="adm-users-tbody"></tbody>
+                </table>
+              </div>
+            </section>
+
+            <section class="panel">
+              <div class="panel-head">
+                <h2>Exchange Requests Ledger</h2>
+              </div>
+              <div class="table-wrap">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th>Participants</th>
+                      <th>Skills Exchanged</th>
+                      <th>Date</th>
+                      <th>Status</th>
+                    </tr>
+                  </thead>
+                  <tbody id="adm-requests-tbody"></tbody>
+                </table>
+              </div>
+            </section>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <script type="module" src="/js/admin.js"></script>
+  </body>
+</html>

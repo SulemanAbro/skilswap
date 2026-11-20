@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard — SkillSwap</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/dashboard.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside id="workspace-sidebar" class="sidebar"></aside>
+
+      <div class="workspace-main">
+        <header class="topbar">
+          <div class="topbar-left">
+            <button type="button" id="mobile-menu-toggle" class="mobile-menu-btn" aria-label="Toggle navigation menu">☰</button>
+            <div id="topbar-breadcrumb" class="breadcrumb">SkillSwap / Dashboard</div>
+          </div>
+          <a href="/matches.html" class="btn btn-primary btn-sm">Find Skill Matches</a>
+        </header>
+
+        <main class="page-content">
+          <div class="page-intro">
+            <div>
+              <h1 id="dashboard-welcome">Loading your workspace...</h1>
+              <p id="dashboard-subtitle">Fetching your academic profile and skill matches</p>
+            </div>
+            <a href="/skills.html" class="btn btn-secondary btn-sm">Add or Edit Skills</a>
+          </div>
+
+          <section class="kpi-strip" aria-label="Activity summary">
+            <div class="kpi-box">
+              <div class="kpi-label">Mutual Matches</div>
+              <div id="kpi-matches" class="kpi-number tabular-nums">0</div>
+            </div>
+            <div class="kpi-box">
+              <div class="kpi-label">Pending Requests</div>
+              <div id="kpi-pending" class="kpi-number tabular-nums">0</div>
+            </div>
+            <div class="kpi-box">
+              <div class="kpi-label">Upcoming Sessions</div>
+              <div id="kpi-upcoming" class="kpi-number tabular-nums">0</div>
+            </div>
+            <div class="kpi-box">
+              <div class="kpi-label">Completed Exchanges</div>
+              <div id="kpi-completed" class="kpi-number tabular-nums">0</div>
+            </div>
+          </section>
+
+          <div class="workspace-grid-2">
+            <div>
+              <section class="panel" style="margin-bottom: 20px;">
+                <div class="panel-head">
+                  <h2>Suggested Mutual Matches</h2>
+                  <a href="/matches.html" style="font-size: 13.5px; color: var(--accent-blue); font-weight: 600;">View All Matches →</a>
+                </div>
+                <div id="dash-matches" class="match-cards-grid"></div>
+              </section>
+
+              <div class="workspace-grid-equal">
+                <section class="panel">
+                  <div class="panel-head">
+                    <h2>Skills I Can Teach</h2>
+                    <a href="/skills.html" style="font-size: 13px; color: var(--accent-blue); font-weight: 600;">Manage</a>
+                  </div>
+                  <ul id="dash-teach-list" class="skill-list"></ul>
+                </section>
+
+                <section class="panel">
+                  <div class="panel-head">
+                    <h2>Skills I Want to Learn</h2>
+                    <a href="/skills.html" style="font-size: 13px; color: var(--accent-blue); font-weight: 600;">Manage</a>
+                  </div>
+                  <ul id="dash-learn-list" class="skill-list"></ul>
+                </section>
+              </div>
+            </div>
+
+            <div>
+              <section class="completion-wrap" aria-label="Profile completion">
+                <svg class="completion-ring" viewBox="0 0 64 64">
+                  <circle cx="32" cy="32" r="26" fill="none" stroke="rgba(255,255,255,0.16)" stroke-width="6" />
+                  <circle
+                    id="completion-circle"
+                    cx="32"
+                    cy="32"
+                    r="26"
+                    fill="none"
+                    stroke="#3b82f6"
+                    stroke-width="6"
+                    stroke-linecap="round"
+                    transform="rotate(-90 32 32)"
+                  />
+                  <text id="completion-pct" x="32" y="36" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="700">0%</text>
+                </svg>
+                <div>
+                  <strong style="font-size: 15px; display: block;">Profile Completion</strong>
+                  <span style="font-size: 13px; color: var(--text-on-dark-muted);">Complete your bio & skills to rank higher in matches.</span>
+                </div>
+              </section>
+
+              <section class="panel" style="margin-bottom: 20px;">
+                <div class="panel-head">
+                  <h2>Upcoming Sessions</h2>
+                  <a href="/sessions.html" style="font-size: 13px; color: var(--accent-blue); font-weight: 600;">Schedule</a>
+                </div>
+                <div id="dash-sessions"></div>
+              </section>
+
+              <section class="panel">
+                <div class="panel-head">
+                  <h2>Recent Activity</h2>
+                  <a href="/requests.html" style="font-size: 13px; color: var(--accent-blue); font-weight: 600;">Requests</a>
+                </div>
+                <div id="dash-activity"></div>
+              </section>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <script type="module" src="/js/dashboard.js"></script>
+  </body>
+</html>

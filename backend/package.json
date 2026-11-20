@@ -1,0 +1,15 @@
+{
+  "name": "skillswap-backend",
+  "version": "1.0.0",
+  "description": "SkillSwap Node.js and Express REST API backend",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test tests/skillSwap.test.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^4.21.2"
+  }
+}

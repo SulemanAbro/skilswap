@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In — SkillSwap</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
+  </head>
+  <body class="auth-body">
+    <div class="auth-shell">
+      <aside class="auth-aside">
+        <a href="/index.html" class="auth-brand">SkillSwap</a>
+        <div class="auth-aside-copy">
+          <h1>Continue your peer learning exchanges.</h1>
+          <p>
+            Access your mutual skill matches, respond to incoming exchange requests, and manage
+            upcoming campus or online sessions.
+          </p>
+          <div class="auth-pair-preview">
+            <div style="font-size: 13px; color: #93c5fd; font-weight: 600; margin-bottom: 6px;">
+              Instant Demo Access
+            </div>
+            <p style="font-size: 13.5px; color: #cbd5e1;">
+              Use the quick-fill buttons on the right to sign in as Ahmed Khan (CS), Sara Malik
+              (Design), or the Platform Administrator.
+            </p>
+          </div>
+        </div>
+        <div style="font-size: 13px; color: var(--text-on-dark-muted);">
+          <a href="/index.html">← Back to SkillSwap home</a>
+        </div>
+      </aside>
+
+      <main class="auth-main">
+        <section class="auth-card" aria-labelledby="login-heading">
+          <h2 id="login-heading">Sign in to SkillSwap</h2>
+          <p class="auth-card-sub">
+            New to the platform? <a href="/register.html" style="color: var(--accent-blue); font-weight: 600;">Create a student account</a>
+          </p>
+
+          <div id="already-signed-in" class="form-success hidden" style="margin-bottom: 16px;">
+            You are currently signed in.
+            <a id="continue-dashboard-link" href="/dashboard.html" style="text-decoration: underline; font-weight: 600;">Continue to workspace</a>
+          </div>
+
+          <div id="login-error" class="form-error hidden" role="alert" style="margin-bottom: 16px;"></div>
+
+          <form id="login-form" class="form-grid" novalidate>
+            <div class="field">
+              <label for="login-email">University Email</label>
+              <input
+                type="email"
+                id="login-email"
+                name="email"
+                placeholder="ahmed@skillswap.edu"
+                required
+                autocomplete="email"
+              />
+            </div>
+
+            <div class="field">
+              <label for="login-password">Password</label>
+              <input
+                type="password"
+                id="login-password"
+                name="password"
+                placeholder="Enter your password"
+                required
+                autocomplete="current-password"
+              />
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 4px;">
+              Sign In
+            </button>
+          </form>
+
+          <div class="demo-box">
+            <div class="demo-box-title">Quick-Fill Demo Accounts (Click to populate credentials)</div>
+            <div class="demo-actions">
+              <button
+                type="button"
+                class="btn btn-secondary btn-sm"
+                data-demo-email="ahmed@skillswap.edu"
+                data-demo-password="Password123!"
+              >
+                Ahmed (CS Student)
+              </button>
+              <button
+                type="button"
+                class="btn btn-secondary btn-sm"
+                data-demo-email="sara@skillswap.edu"
+                data-demo-password="Password123!"
+              >
+                Sara (Design Student)
+              </button>
+              <button
+                type="button"
+                class="btn btn-secondary btn-sm"
+                data-demo-email="admin@skillswap.edu"
+                data-demo-password="Admin123!"
+              >
+                Admin Account
+              </button>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script type="module" src="/js/auth.js"></script>
+  </body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Profile — SkillSwap</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/dashboard.css" />
+    <link rel="stylesheet" href="/css/profile.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside id="workspace-sidebar" class="sidebar"></aside>
+
+      <div class="workspace-main">
+        <header class="topbar">
+          <div class="topbar-left">
+            <button type="button" id="mobile-menu-toggle" class="mobile-menu-btn" aria-label="Toggle navigation menu">☰</button>
+            <div id="topbar-breadcrumb" class="breadcrumb">SkillSwap / Profile</div>
+          </div>
+          <a href="/skills.html" class="btn btn-primary btn-sm">Manage Skills</a>
+        </header>
+
+        <main class="page-content">
+          <section class="profile-banner">
+            <div class="profile-identity">
+              <div id="profile-avatar-slot"></div>
+              <div>
+                <h1 id="profile-name">Loading profile...</h1>
+                <div id="profile-meta" class="meta-line"></div>
+                <p id="profile-bio" class="profile-bio"></p>
+              </div>
+            </div>
+
+            <div style="display: flex; flex-direction: column; align-items: flex-end; gap: 12px;">
+              <div class="profile-stats">
+                <div class="profile-stat-item">
+                  <div id="stat-exchanges" class="profile-stat-val tabular-nums">0</div>
+                  <div class="profile-stat-label">Completed Exchanges</div>
+                </div>
+                <div class="profile-stat-item">
+                  <div id="stat-rating" class="profile-stat-val tabular-nums">New</div>
+                  <div class="profile-stat-label">Average Rating</div>
+                </div>
+                <div class="profile-stat-item">
+                  <div id="stat-reviews" class="profile-stat-val tabular-nums">0</div>
+                  <div class="profile-stat-label">Reviews</div>
+                </div>
+              </div>
+              <button type="button" id="open-report-btn" class="btn btn-ghost-dark btn-sm hidden">Report Account</button>
+            </div>
+          </section>
+
+          <div class="workspace-grid-equal" style="margin-bottom: 24px;">
+            <section class="panel">
+              <div class="panel-head">
+                <h2>Skills I Can Teach</h2>
+              </div>
+              <ul id="profile-teach-skills" class="skill-list"></ul>
+            </section>
+
+            <section class="panel">
+              <div class="panel-head">
+                <h2>Skills I Want to Learn</h2>
+              </div>
+              <ul id="profile-learn-skills" class="skill-list"></ul>
+            </section>
+          </div>
+
+          <section id="edit-profile-panel" class="panel hidden" style="margin-bottom: 24px;">
+            <div class="panel-head">
+              <h2>Edit My Profile</h2>
+            </div>
+            <div id="profile-form-error" class="form-error hidden" style="margin-bottom: 14px;"></div>
+            <form id="edit-profile-form" class="form-grid">
+              <div class="form-row-2">
+                <div class="field">
+                  <label for="edit-name">Full Name</label>
+                  <input type="text" id="edit-name" required />
+                </div>
+                <div class="field">
+                  <label for="edit-university">University</label>
+                  <input type="text" id="edit-university" required />
+                </div>
+              </div>
+              <div class="form-row-2">
+                <div class="field">
+                  <label for="edit-department">Department</label>
+                  <input type="text" id="edit-department" required />
+                </div>
+                <div class="field">
+                  <label for="edit-semester">Semester</label>
+                  <input type="text" id="edit-semester" required />
+                </div>
+              </div>
+              <div class="field">
+                <label for="edit-avatar">Profile Picture URL (Optional)</label>
+                <input type="text" id="edit-avatar" placeholder="/src/assets/images/..." />
+              </div>
+              <div class="field">
+                <label for="edit-bio">Personal Introduction</label>
+                <textarea id="edit-bio"></textarea>
+              </div>
+              <div>
+                <button type="submit" class="btn btn-primary">Save Profile Changes</button>
+              </div>
+            </form>
+          </section>
+
+          <section class="panel">
+            <div class="panel-head">
+              <h2>Ratings & Peer Reviews</h2>
+            </div>
+            <div id="profile-reviews-list"></div>
+          </section>
+        </main>
+      </div>
+    </div>
+
+    <dialog id="report-dialog" class="ss-dialog">
+      <div class="dialog-head">
+        <h3>Report Student Account</h3>
+        <button type="button" id="close-report-dialog" class="dialog-close" aria-label="Close modal">✕</button>
+      </div>
+      <div class="dialog-body">
+        <form id="report-form" class="form-grid">
+          <div class="field">
+            <label for="report-reason">Reason</label>
+            <input type="text" id="report-reason" placeholder="e.g., Misleading skill listing or spam" required />
+          </div>
+          <div class="field">
+            <label for="report-details">Additional Details</label>
+            <textarea id="report-details" placeholder="Provide context for administrators to review."></textarea>
+          </div>
+          <button type="submit" class="btn btn-danger">Submit Report</button>
+        </form>
+      </div>
+    </dialog>
+
+    <script type="module" src="/js/profile.js"></script>
+  </body>
+</html>

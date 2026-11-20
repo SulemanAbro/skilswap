@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exchange Requests — SkillSwap</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/dashboard.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside id="workspace-sidebar" class="sidebar"></aside>
+
+      <div class="workspace-main">
+        <header class="topbar">
+          <div class="topbar-left">
+            <button type="button" id="mobile-menu-toggle" class="mobile-menu-btn" aria-label="Toggle navigation menu">☰</button>
+            <div id="topbar-breadcrumb" class="breadcrumb">SkillSwap / Exchange Requests</div>
+          </div>
+          <a href="/matches.html" class="btn btn-primary btn-sm">Find New Matches</a>
+        </header>
+
+        <main class="page-content">
+          <div class="page-intro">
+            <div>
+              <h1>Exchange Requests</h1>
+              <p>Review incoming proposals, cancel pending outbound requests, or schedule accepted swaps.</p>
+            </div>
+            <div class="segmented-bar" role="tablist" aria-label="Request direction">
+              <button type="button" class="segmented-btn active" data-req-tab="received" role="tab">
+                Received (<span id="count-received" class="tabular-nums">0</span>)
+              </button>
+              <button type="button" class="segmented-btn" data-req-tab="sent" role="tab">
+                Sent (<span id="count-sent" class="tabular-nums">0</span>)
+              </button>
+            </div>
+          </div>
+
+          <section id="requests-list"></section>
+        </main>
+      </div>
+    </div>
+
+    <script type="module" src="/js/requests.js"></script>
+  </body>
+</html>

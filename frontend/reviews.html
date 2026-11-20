@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ratings & Reviews — SkillSwap</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/dashboard.css" />
+    <link rel="stylesheet" href="/css/profile.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside id="workspace-sidebar" class="sidebar"></aside>
+
+      <div class="workspace-main">
+        <header class="topbar">
+          <div class="topbar-left">
+            <button type="button" id="mobile-menu-toggle" class="mobile-menu-btn" aria-label="Toggle navigation menu">☰</button>
+            <div id="topbar-breadcrumb" class="breadcrumb">SkillSwap / Reviews</div>
+          </div>
+          <a href="/sessions.html" class="btn btn-secondary btn-sm">View Sessions</a>
+        </header>
+
+        <main class="page-content">
+          <div class="page-intro">
+            <div>
+              <h1>Ratings & Reviews</h1>
+              <p>Verified feedback from completed skill-exchange sessions.</p>
+            </div>
+          </div>
+
+          <section id="review-submit-panel" class="panel" style="margin-bottom: 24px;">
+            <div class="panel-head">
+              <h2>Leave Feedback for a Completed Exchange</h2>
+            </div>
+
+            <div id="no-eligible-sessions" class="empty-state hidden">
+              <h3>No completed sessions awaiting review</h3>
+              <p>Reviews are restricted to completed learning sessions. Complete a scheduled session to unlock feedback.</p>
+              <a href="/sessions.html" class="btn btn-primary btn-sm">Go to Learning Sessions</a>
+            </div>
+
+            <div id="review-error" class="form-error hidden" style="margin-bottom: 14px;"></div>
+
+            <form id="submit-review-form" class="form-grid">
+              <div class="form-row-2">
+                <div class="field">
+                  <label for="review-session-id">Completed Learning Session</label>
+                  <select id="review-session-id" required></select>
+                </div>
+                <div class="field">
+                  <label>Star Rating</label>
+                  <input type="hidden" id="review-rating-value" value="5" />
+                  <div class="star-selector" role="group" aria-label="Select rating from 1 to 5 stars">
+                    <button type="button" class="star-btn" data-star="1">1 ★</button>
+                    <button type="button" class="star-btn" data-star="2">2 ★</button>
+                    <button type="button" class="star-btn" data-star="3">3 ★</button>
+                    <button type="button" class="star-btn" data-star="4">4 ★</button>
+                    <button type="button" class="star-btn active" data-star="5">5 ★</button>
+                  </div>
+                </div>
+              </div>
+              <div class="field">
+                <label for="review-comment">Written Review</label>
+                <textarea id="review-comment" placeholder="Share what you learned, how clearly concepts were explained, and session collaboration." required></textarea>
+              </div>
+              <div>
+                <button type="submit" class="btn btn-primary">Submit Verified Review</button>
+              </div>
+            </form>
+          </section>
+
+          <div class="workspace-grid-equal">
+            <section class="panel">
+              <div class="panel-head">
+                <h2>Reviews Received</h2>
+              </div>
+              <div id="reviews-received-list"></div>
+            </section>
+
+            <section class="panel">
+              <div class="panel-head">
+                <h2>Reviews You Gave</h2>
+              </div>
+              <div id="reviews-given-list"></div>
+            </section>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <script type="module" src="/js/reviews.js"></script>
+  </body>
+</html>

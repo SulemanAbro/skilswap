@@ -1,0 +1,6 @@
+node_modules/
+dist/
+.env
+database/live-data.json
+.playwright-cli/
+*.log

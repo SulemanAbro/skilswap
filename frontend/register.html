@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Student Account — SkillSwap</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
+  </head>
+  <body class="auth-body">
+    <div class="auth-shell">
+      <aside class="auth-aside">
+        <a href="/index.html" class="auth-brand">SkillSwap</a>
+        <div class="auth-aside-copy">
+          <h1>Join a campus community built on shared skills.</h1>
+          <p>
+            List one skill you feel confident teaching and one skill you want to learn. Our mutual
+            matching engine immediately surfaces students whose interests complement yours.
+          </p>
+        </div>
+        <div style="font-size: 13px; color: var(--text-on-dark-muted);">
+          Already registered? <a href="/login.html" style="color: #93c5fd; font-weight: 600;">Sign in here</a>
+        </div>
+      </aside>
+
+      <main class="auth-main">
+        <section class="auth-card" style="max-width: 560px;" aria-labelledby="register-heading">
+          <h2 id="register-heading">Student Registration</h2>
+          <p class="auth-card-sub">
+            Already have an account? <a href="/login.html" style="color: var(--accent-blue); font-weight: 600;">Sign in</a>
+          </p>
+
+          <div id="already-signed-in" class="form-success hidden" style="margin-bottom: 16px;">
+            You are already signed in.
+            <a id="continue-dashboard-link" href="/dashboard.html" style="text-decoration: underline; font-weight: 600;">Go to Dashboard</a>
+          </div>
+
+          <div id="register-error" class="form-error hidden" role="alert" style="margin-bottom: 16px;"></div>
+
+          <form id="register-form" class="form-grid" novalidate>
+            <div class="form-row-2">
+              <div class="field">
+                <label for="reg-name">Full Name</label>
+                <input type="text" id="reg-name" placeholder="e.g., Zainab Tariq" required />
+              </div>
+              <div class="field">
+                <label for="reg-email">Email Address</label>
+                <input type="email" id="reg-email" placeholder="zainab@university.edu" required />
+              </div>
+            </div>
+
+            <div class="form-row-2">
+              <div class="field">
+                <label for="reg-password">Password (min 6 chars)</label>
+                <input type="password" id="reg-password" placeholder="Create password" required />
+              </div>
+              <div class="field">
+                <label for="reg-university">University</label>
+                <input type="text" id="reg-university" placeholder="National University of Computing" required />
+              </div>
+            </div>
+
+            <div class="form-row-2">
+              <div class="field">
+                <label for="reg-department">Department</label>
+                <input type="text" id="reg-department" placeholder="Computer Science" required />
+              </div>
+              <div class="field">
+                <label for="reg-semester">Semester</label>
+                <select id="reg-semester" required>
+                  <option value="">Select semester</option>
+                  <option value="1st Semester">1st Semester</option>
+                  <option value="2nd Semester">2nd Semester</option>
+                  <option value="3rd Semester">3rd Semester</option>
+                  <option value="4th Semester">4th Semester</option>
+                  <option value="5th Semester">5th Semester</option>
+                  <option value="6th Semester">6th Semester</option>
+                  <option value="7th Semester">7th Semester</option>
+                  <option value="8th Semester">8th Semester</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row-2">
+              <div class="field">
+                <label for="reg-teach-skill">First Skill You Can Teach (Optional)</label>
+                <input type="text" id="reg-teach-skill" placeholder="e.g., Python Programming" />
+              </div>
+              <div class="field">
+                <label for="reg-learn-skill">First Skill You Want to Learn (Optional)</label>
+                <input type="text" id="reg-learn-skill" placeholder="e.g., Graphic Design" />
+              </div>
+            </div>
+
+            <div class="field">
+              <label>Profile Portrait (Optional)</label>
+              <input type="hidden" id="reg-avatar" value="/src/assets/images/avatar_student_ahmed_1795030257871.jpg" />
+              <div class="avatar-picker">
+                <button type="button" class="avatar-option selected" data-avatar-path="/src/assets/images/avatar_student_ahmed_1795030257871.jpg" aria-label="Portrait option 1">
+                  <img src="/src/assets/images/avatar_student_ahmed_1795030257871.jpg" alt="Avatar 1" referrerpolicy="no-referrer" />
+                </button>
+                <button type="button" class="avatar-option" data-avatar-path="/src/assets/images/avatar_student_sara_1795030257501.jpg" aria-label="Portrait option 2">
+                  <img src="/src/assets/images/avatar_student_sara_1795030257501.jpg" alt="Avatar 2" referrerpolicy="no-referrer" />
+                </button>
+                <button type="button" class="avatar-option" data-avatar-path="/src/assets/images/avatar_student_omar_1795030258349.jpg" aria-label="Portrait option 3">
+                  <img src="/src/assets/images/avatar_student_omar_1795030258349.jpg" alt="Avatar 3" referrerpolicy="no-referrer" />
+                </button>
+                <button type="button" class="avatar-option" data-avatar-path="/src/assets/images/avatar_student_maya_1795030260696.jpg" aria-label="Portrait option 4">
+                  <img src="/src/assets/images/avatar_student_maya_1795030260696.jpg" alt="Avatar 4" referrerpolicy="no-referrer" />
+                </button>
+                <button type="button" class="avatar-option" data-avatar-path="" aria-label="Use initials monogram">
+                  <span style="font-size: 12px; font-weight: 700; color: var(--text-secondary);">Initials</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="reg-bio">Short Introduction</label>
+              <textarea id="reg-bio" placeholder="Share what you are studying and what kind of peer collaboration excites you."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              Create Student Account
+            </button>
+          </form>
+        </section>
+      </main>
+    </div>
+
+    <script type="module" src="/js/auth.js"></script>
+  </body>
+</html>

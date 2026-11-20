@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SkillSwap — Student Skill Exchange Platform</title>
+    <meta
+      name="description"
+      content="SkillSwap connects university students to teach skills they know and learn skills they want through verified mutual skill matching."
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/landing.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
+  </head>
+  <body class="landing-body">
+    <header class="landing-header">
+      <div class="landing-container landing-header-inner">
+        <a href="/index.html" class="brand-wordmark">SkillSwap</a>
+        <nav class="landing-nav" aria-label="Primary navigation">
+          <a href="#mutual-matching">Mutual Matching</a>
+          <a href="#campus-skills">Campus Skills</a>
+          <a href="#how-it-works">How It Works</a>
+          <a href="/login.html">Sign In</a>
+        </nav>
+        <a href="/register.html" class="btn btn-primary btn-sm">Join SkillSwap</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-section">
+        <div class="landing-container">
+          <div class="hero-grid">
+            <div class="hero-copy">
+              <div class="hero-kicker">Peer-to-Peer University Learning</div>
+              <h1>Trade skills you know for the ones you want to learn.</h1>
+              <p class="hero-lead">
+                SkillSwap pairs students across departments using bidirectional skill matching.
+                Mentor a peer in Python or Database Design, and learn Graphic Design, Photography,
+                or Public Speaking in return without financial transactions.
+              </p>
+              <div class="hero-cta-row">
+                <a href="/register.html" class="btn btn-primary">Create Student Account</a>
+                <a href="/login.html" class="btn btn-ghost-dark">Explore Demo Workspace</a>
+              </div>
+            </div>
+
+            <figure class="hero-visual" style="margin: 0;">
+              <img
+                src="/src/assets/images/hero_campus_studio_1795030257263.jpg"
+                alt="University students collaborating with laptops and design notebooks in a study studio"
+                referrerpolicy="no-referrer"
+              />
+              <figcaption class="hero-visual-caption">
+                Cross-departmental study sessions matched by complementary teaching and learning goals.
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="proof-strip" aria-label="Platform overview metrics">
+            <div class="proof-cell">
+              <div class="proof-value tabular-nums">100%</div>
+              <div class="proof-label">Knowledge-for-knowledge exchange</div>
+            </div>
+            <div class="proof-cell">
+              <div class="proof-value tabular-nums">2-Way</div>
+              <div class="proof-label">Automated mutual skill matching</div>
+            </div>
+            <div class="proof-cell">
+              <div class="proof-value tabular-nums">12+</div>
+              <div class="proof-label">Technical & creative skill tracks</div>
+            </div>
+            <div class="proof-cell">
+              <div class="proof-value tabular-nums">Verified</div>
+              <div class="proof-label">Post-session peer ratings only</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="mutual-matching" class="light-band">
+        <div class="landing-container">
+          <div class="section-header">
+            <h2>Built around bidirectional peer matching</h2>
+            <p>
+              Instead of one-way tutoring boards, SkillSwap compares what you can teach against
+              what another student wants to learn—and verifies the reverse.
+            </p>
+          </div>
+
+          <div class="bento-grid">
+            <article class="bento-card bento-span-7">
+              <div class="editorial-index">01. Mutual Skill Matching</div>
+              <h3>Example: How Ahmed and Sara connect</h3>
+              <p>
+                When Ahmed lists Python Programming under Teach and Graphic Design under Learn,
+                and Sara lists the exact inverse, SkillSwap calculates their compatibility and
+                opens a direct exchange proposal.
+              </p>
+              <div class="match-diagram-box">
+                <div class="match-diagram-pair">
+                  <div class="diagram-student">
+                    <strong>Ahmed Khan · Computer Science</strong>
+                    <span>Teaches: Python Programming</span>
+                    <span>Learns: Graphic Design</span>
+                  </div>
+                  <div class="diagram-arrows" aria-hidden="true">
+                    <span>Python →</span>
+                    <span>← Design</span>
+                  </div>
+                  <div class="diagram-student">
+                    <strong>Sara Malik · Communication Design</strong>
+                    <span>Teaches: Graphic Design</span>
+                    <span>Learns: Python Programming</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="bento-card bento-span-5">
+              <div class="editorial-index">02. Structured Workflows</div>
+              <h3>From request to completed review</h3>
+              <p>
+                Every exchange follows clear milestones so both students stay aligned on timing,
+                agenda, and learning outcomes:
+              </p>
+              <ol style="padding-left: 18px; margin-top: 14px; color: var(--text-secondary); font-size: 14.5px;">
+                <li>Send a targeted exchange request with offered & requested skills.</li>
+                <li>Accept or decline incoming proposals from your inbox.</li>
+                <li>Schedule an Online or In-person session date and agenda.</li>
+                <li>Mark the session completed to unlock verified 5-star reviews.</li>
+              </ol>
+
+              <div class="audio-briefing">
+                <div>
+                  <strong style="font-size: 13.5px; display: block;">Campus Orientation Chime</strong>
+                  <span style="font-size: 12px; color: var(--text-muted);">HTML5 audio preview</span>
+                </div>
+                <audio controls preload="metadata" src="/assets/intro-briefing.wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+            </article>
+
+            <article id="campus-skills" class="bento-card bento-span-4">
+              <div class="editorial-index">03. Skill Tracks</div>
+              <h3>Popular exchange areas</h3>
+              <p>Students combine technical engineering with studio and communication crafts.</p>
+              <ul style="padding-left: 18px; margin-top: 14px; color: var(--text-secondary); font-size: 14.5px; line-height: 1.8;">
+                <li><strong>Engineering:</strong> Python, Java, Web Development, Databases</li>
+                <li><strong>Design & Media:</strong> Graphic Design, UI/UX, Video Editing</li>
+                <li><strong>Research & Soft Skills:</strong> Machine Learning, Photography, Public Speaking</li>
+              </ul>
+            </article>
+
+            <article class="bento-card bento-span-8">
+              <div class="editorial-index">04. Live Exchange Directory Snapshot</div>
+              <h3>Recent campus pairings</h3>
+              <p style="margin-bottom: 16px;">
+                Verified exchanges across departments scheduled on SkillSwap this semester.
+              </p>
+              <div class="table-wrap">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th>Exchange Pair</th>
+                      <th>Skills Traded</th>
+                      <th>Format</th>
+                      <th>Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Ahmed Khan ↔ Sara Malik</td>
+                      <td>Python Programming ↔ Graphic Design</td>
+                      <td>Online</td>
+                      <td><span class="status-tag status-completed">Completed</span></td>
+                    </tr>
+                    <tr>
+                      <td>Omar Farooq ↔ Ahmed Khan</td>
+                      <td>Web Development ↔ Database Management</td>
+                      <td>In-person</td>
+                      <td><span class="status-tag status-scheduled">Scheduled</span></td>
+                    </tr>
+                    <tr>
+                      <td>Maya Lin ↔ Bilal Raza</td>
+                      <td>Photography ↔ Public Speaking</td>
+                      <td>In-person</td>
+                      <td><span class="status-tag status-pending">Pending</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="how-it-works" class="dark-band">
+        <div class="landing-container">
+          <div class="section-header" style="max-width: 620px;">
+            <h2 style="color: #ffffff;">Start exchanging knowledge in four steps</h2>
+            <p style="color: var(--text-on-dark-muted);">
+              Sign in with a demo student profile or register your own university account to test
+              matching, session scheduling, and reviews immediately.
+            </p>
+          </div>
+
+          <ol class="steps-list">
+            <li class="step-item">
+              <div class="step-num">Step 01</div>
+              <h3>Build your academic profile</h3>
+              <p>Add your university, department, semester, and a concise introduction.</p>
+            </li>
+            <li class="step-item">
+              <div class="step-num">Step 02</div>
+              <h3>Tag Teach & Learn skills</h3>
+              <p>Specify your proficiency levels and what topics you want to practice next.</p>
+            </li>
+            <li class="step-item">
+              <div class="step-num">Step 03</div>
+              <h3>Connect with mutual matches</h3>
+              <p>Review compatibility scores and send structured skill-exchange proposals.</p>
+            </li>
+            <li class="step-item">
+              <div class="step-num">Step 04</div>
+              <h3>Schedule & review sessions</h3>
+              <p>Arrange Online or campus meetups and record verified peer feedback.</p>
+            </li>
+          </ol>
+
+          <div style="margin-top: 36px; display: flex; flex-wrap: wrap; gap: 14px;">
+            <a href="/register.html" class="btn btn-primary">Register Student Account</a>
+            <a href="/login.html" class="btn btn-ghost-dark">Sign In with Demo Account</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="landing-footer">
+      <div class="landing-container footer-inner">
+        <div>
+          <strong style="color: #ffffff; font-family: var(--font-display);">SkillSwap</strong>
+          <span style="margin-left: 10px;">Student Skill Exchange Platform · Built with HTML5, CSS3, JavaScript & Node.js</span>
+        </div>
+        <nav class="footer-links" aria-label="Footer links">
+          <a href="/login.html">Student Login</a>
+          <a href="/register.html">Register</a>
+          <a href="/dashboard.html">Dashboard</a>
+          <a href="/admin.html">Admin Console</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

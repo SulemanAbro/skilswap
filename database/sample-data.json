@@ -1,0 +1,391 @@
+{
+  "users": [
+    {
+      "_id": "660000000000000000000001",
+      "name": "Ahmed Khan",
+      "email": "ahmed@skillswap.edu",
+      "seedPassword": "Password123!",
+      "university": "National University of Computing",
+      "department": "Computer Science",
+      "semester": "6th Semester",
+      "profilePicture": "/src/assets/images/avatar_student_ahmed_1795030257871.jpg",
+      "bio": "Backend systems enthusiast building Python automation scripts and PostgreSQL/MongoDB schemas. Looking to sharpen visual hierarchy and Figma prototyping skills.",
+      "role": "student",
+      "status": "active",
+      "createdAt": "2026-09-12T09:30:00.000Z"
+    },
+    {
+      "_id": "660000000000000000000002",
+      "name": "Sara Malik",
+      "email": "sara@skillswap.edu",
+      "seedPassword": "Password123!",
+      "university": "Institute of Visual Arts & Tech",
+      "department": "Communication Design",
+      "semester": "5th Semester",
+      "profilePicture": "/src/assets/images/avatar_student_sara_1795030257501.jpg",
+      "bio": "Brand identity and product interface designer. Happy to trade critique sessions on typography, Figma components, and layout systems for Python & frontend coding.",
+      "role": "student",
+      "status": "active",
+      "createdAt": "2026-09-14T11:15:00.000Z"
+    },
+    {
+      "_id": "660000000000000000000003",
+      "name": "Omar Farooq",
+      "email": "omar@skillswap.edu",
+      "seedPassword": "Password123!",
+      "university": "Metro Engineering University",
+      "department": "Software Engineering",
+      "semester": "7th Semester",
+      "profilePicture": "/src/assets/images/avatar_student_omar_1795030258349.jpg",
+      "bio": "Full-stack JavaScript and Java developer working on campus web portals. Eager to learn applied Machine Learning and DSLR portrait photography.",
+      "role": "student",
+      "status": "active",
+      "createdAt": "2026-09-16T14:20:00.000Z"
+    },
+    {
+      "_id": "660000000000000000000004",
+      "name": "Maya Lin",
+      "email": "maya@skillswap.edu",
+      "seedPassword": "Password123!",
+      "university": "National University of Computing",
+      "department": "Data Science",
+      "semester": "4th Semester",
+      "profilePicture": "/src/assets/images/avatar_student_maya_1795030260696.jpg",
+      "bio": "Researching predictive models and leading the campus photography collective. Excited to swap ML fundamentals or camera workshops for web development and public speaking.",
+      "role": "student",
+      "status": "active",
+      "createdAt": "2026-09-18T16:45:00.000Z"
+    },
+    {
+      "_id": "660000000000000000000005",
+      "name": "Bilal Raza",
+      "email": "bilal@skillswap.edu",
+      "seedPassword": "Password123!",
+      "university": "Beaconhouse Business & Tech",
+      "department": "Media Studies",
+      "semester": "6th Semester",
+      "profilePicture": "",
+      "bio": "Documentary filmmaker and varsity debate captain. I coach presentation confidence and Premiere Pro editing in exchange for coding and photography.",
+      "role": "student",
+      "status": "active",
+      "createdAt": "2026-09-20T10:05:00.000Z"
+    },
+    {
+      "_id": "660000000000000000000099",
+      "name": "Dr. Tariq Mehmood",
+      "email": "admin@skillswap.edu",
+      "seedPassword": "Admin123!",
+      "university": "SkillSwap Governance",
+      "department": "Platform Administration",
+      "semester": "Faculty Lead",
+      "profilePicture": "",
+      "bio": "Academic coordinator overseeing student peer-learning safety, skill taxonomy quality, and community moderation.",
+      "role": "admin",
+      "status": "active",
+      "createdAt": "2026-09-01T08:00:00.000Z"
+    }
+  ],
+  "skills": [
+    {
+      "_id": "661000000000000000000001",
+      "userId": "660000000000000000000001",
+      "skillName": "Python Programming",
+      "skillType": "Teach",
+      "skillLevel": "Advanced",
+      "description": "Data structures, scripting, Flask/FastAPI basics, and clean problem-solving workflows.",
+      "createdAt": "2026-09-12T09:40:00.000Z"
+    },
+    {
+      "_id": "661000000000000000000002",
+      "userId": "660000000000000000000001",
+      "skillName": "Database Management",
+      "skillType": "Teach",
+      "skillLevel": "Intermediate",
+      "description": "MongoDB document modeling, indexing strategies, and relational SQL schema normalization.",
+      "createdAt": "2026-09-12T09:45:00.000Z"
+    },
+    {
+      "_id": "661000000000000000000003",
+      "userId": "660000000000000000000001",
+      "skillName": "Graphic Design",
+      "skillType": "Learn",
+      "skillLevel": "Beginner",
+      "description": "Want to learn poster grid systems, visual balance, and typography pairing.",
+      "createdAt": "2026-09-12T09:50:00.000Z"
+    },
+    {
+      "_id": "661000000000000000000004",
+      "userId": "660000000000000000000001",
+      "skillName": "UI/UX Design",
+      "skillType": "Learn",
+      "skillLevel": "Intermediate",
+      "description": "Looking to improve wireframing, Figma auto-layout, and user flow heuristics.",
+      "createdAt": "2026-09-12T09:55:00.000Z"
+    },
+    {
+      "_id": "661000000000000000000022",
+      "userId": "660000000000000000000001",
+      "skillName": "Web Development",
+      "skillType": "Learn",
+      "skillLevel": "Beginner",
+      "description": "Interested in semantic HTML5, CSS Grid layouts, and Vanilla JS Fetch APIs.",
+      "createdAt": "2026-09-12T10:00:00.000Z"
+    },
+    {
+      "_id": "661000000000000000000005",
+      "userId": "660000000000000000000002",
+      "skillName": "Graphic Design",
+      "skillType": "Teach",
+      "skillLevel": "Advanced",
+      "description": "Editorial typography, grid systems, color theory, and Adobe Illustrator workflows.",
+      "createdAt": "2026-09-14T11:25:00.000Z"
+    },
+    {
+      "_id": "661000000000000000000006",
+      "userId": "660000000000000000000002",
+      "skillName": "UI/UX Design",
+      "skillType": "Teach",
+      "skillLevel": "Advanced",
+      "description": "Design systems, interactive prototyping in Figma, and usability testing.",
+      "createdAt": "2026-09-14T11:30:00.000Z"
+    },
+    {
+      "_id": "661000000000000000000007",
+      "userId": "660000000000000000000002",
+      "skillName": "Python Programming",
+      "skillType": "Learn",
+      "skillLevel": "Beginner",
+      "description": "Want to automate repetitive design asset tasks and understand core Python syntax.",
+      "createdAt": "2026-09-14T11:35:00.000Z"
+    },
+    {
+      "_id": "661000000000000000000008",
+      "userId": "660000000000000000000002",
+      "skillName": "Web Development",
+      "skillType": "Learn",
+      "skillLevel": "Intermediate",
+      "description": "Interested in responsive CSS Grid, Flexbox, and DOM manipulation in Vanilla JS.",
+      "createdAt": "2026-09-14T11:40:00.000Z"
+    },
+    {
+      "_id": "661000000000000000000009",
+      "userId": "660000000000000000000003",
+      "skillName": "Web Development",
+      "skillType": "Teach",
+      "skillLevel": "Advanced",
+      "description": "Semantic HTML5, modern CSS architecture, REST APIs, and Node.js backend patterns.",
+      "createdAt": "2026-09-16T14:30:00.000Z"
+    },
+    {
+      "_id": "661000000000000000000010",
+      "userId": "660000000000000000000003",
+      "skillName": "Java",
+      "skillType": "Teach",
+      "skillLevel": "Intermediate",
+      "description": "Object-oriented design, collections framework, and console/desktop project architecture.",
+      "createdAt": "2026-09-16T14:35:00.000Z"
+    },
+    {
+      "_id": "661000000000000000000011",
+      "userId": "660000000000000000000003",
+      "skillName": "Database Management",
+      "skillType": "Learn",
+      "skillLevel": "Intermediate",
+      "description": "Looking to practice MongoDB aggregation pipelines and query optimization.",
+      "createdAt": "2026-09-16T14:40:00.000Z"
+    },
+    {
+      "_id": "661000000000000000000012",
+      "userId": "660000000000000000000003",
+      "skillName": "Photography",
+      "skillType": "Learn",
+      "skillLevel": "Beginner",
+      "description": "Manual exposure triangle, composition rules, and natural window portraiture.",
+      "createdAt": "2026-09-16T14:45:00.000Z"
+    },
+    {
+      "_id": "661000000000000000000013",
+      "userId": "660000000000000000000003",
+      "skillName": "Machine Learning",
+      "skillType": "Learn",
+      "skillLevel": "Beginner",
+      "description": "Regression, classification intuition, and evaluating scikit-learn models.",
+      "createdAt": "2026-09-16T14:50:00.000Z"
+    },
+    {
+      "_id": "661000000000000000000014",
+      "userId": "660000000000000000000004",
+      "skillName": "Machine Learning",
+      "skillType": "Teach",
+      "skillLevel": "Intermediate",
+      "description": "Supervised learning fundamentals, feature engineering, and model validation.",
+      "createdAt": "2026-09-18T16:50:00.000Z"
+    },
+    {
+      "_id": "661000000000000000000015",
+      "userId": "660000000000000000000004",
+      "skillName": "Photography",
+      "skillType": "Teach",
+      "skillLevel": "Advanced",
+      "description": "DSLR manual settings, framing, lighting ratios, and Lightroom color grading.",
+      "createdAt": "2026-09-18T16:55:00.000Z"
+    },
+    {
+      "_id": "661000000000000000000016",
+      "userId": "660000000000000000000004",
+      "skillName": "Web Development",
+      "skillType": "Learn",
+      "skillLevel": "Beginner",
+      "description": "Building an interactive portfolio site for my photography and ML notebooks.",
+      "createdAt": "2026-09-18T17:00:00.000Z"
+    },
+    {
+      "_id": "661000000000000000000017",
+      "userId": "660000000000000000000004",
+      "skillName": "Public Speaking",
+      "skillType": "Learn",
+      "skillLevel": "Beginner",
+      "description": "Preparing for university research symposium lightning talks.",
+      "createdAt": "2026-09-18T17:05:00.000Z"
+    },
+    {
+      "_id": "661000000000000000000018",
+      "userId": "660000000000000000000005",
+      "skillName": "Video Editing",
+      "skillType": "Teach",
+      "skillLevel": "Advanced",
+      "description": "Narrative pacing, J/L cuts, audio ducking, and color workflows in Premiere Pro.",
+      "createdAt": "2026-09-20T10:15:00.000Z"
+    },
+    {
+      "_id": "661000000000000000000019",
+      "userId": "660000000000000000000005",
+      "skillName": "Public Speaking",
+      "skillType": "Teach",
+      "skillLevel": "Advanced",
+      "description": "Structuring persuasive arguments, pacing delivery, and managing stage anxiety.",
+      "createdAt": "2026-09-20T10:20:00.000Z"
+    },
+    {
+      "_id": "661000000000000000000020",
+      "userId": "660000000000000000000005",
+      "skillName": "Photography",
+      "skillType": "Learn",
+      "skillLevel": "Intermediate",
+      "description": "Transitioning from video framing to still editorial composition.",
+      "createdAt": "2026-09-20T10:25:00.000Z"
+    },
+    {
+      "_id": "661000000000000000000021",
+      "userId": "660000000000000000000005",
+      "skillName": "Python Programming",
+      "skillType": "Learn",
+      "skillLevel": "Beginner",
+      "description": "Want to learn foundational scripting for media metadata automation.",
+      "createdAt": "2026-09-20T10:30:00.000Z"
+    }
+  ],
+  "requests": [
+    {
+      "_id": "662000000000000000000001",
+      "senderId": "660000000000000000000001",
+      "receiverId": "660000000000000000000002",
+      "offeredSkill": "Python Programming",
+      "requestedSkill": "Graphic Design",
+      "message": "Hi Sara! I can walk you through Python fundamentals and automation scripts in exchange for feedback on typography and grid layouts.",
+      "status": "Completed",
+      "createdAt": "2026-10-05T10:00:00.000Z"
+    },
+    {
+      "_id": "662000000000000000000002",
+      "senderId": "660000000000000000000003",
+      "receiverId": "660000000000000000000001",
+      "offeredSkill": "Web Development",
+      "requestedSkill": "Database Management",
+      "message": "Hey Ahmed, would love to swap a Node.js + CSS Grid walkthrough for a deep dive into MongoDB schema relationships.",
+      "status": "Accepted",
+      "createdAt": "2026-11-10T15:30:00.000Z"
+    },
+    {
+      "_id": "662000000000000000000003",
+      "senderId": "660000000000000000000002",
+      "receiverId": "660000000000000000000003",
+      "offeredSkill": "UI/UX Design",
+      "requestedSkill": "Web Development",
+      "message": "Hi Omar! Let us trade a Figma component architecture session for responsive Vanilla JS DOM tips.",
+      "status": "Pending",
+      "createdAt": "2026-11-15T09:15:00.000Z"
+    },
+    {
+      "_id": "662000000000000000000004",
+      "senderId": "660000000000000000000004",
+      "receiverId": "660000000000000000000005",
+      "offeredSkill": "Photography",
+      "requestedSkill": "Public Speaking",
+      "message": "Hi Bilal! I have a symposium talk coming up and can trade an outdoor DSLR lighting workshop for speech coaching.",
+      "status": "Pending",
+      "createdAt": "2026-11-16T12:00:00.000Z"
+    }
+  ],
+  "sessions": [
+    {
+      "_id": "663000000000000000000001",
+      "requestId": "662000000000000000000001",
+      "teacherId": "660000000000000000000001",
+      "learnerId": "660000000000000000000002",
+      "skillName": "Python Programming",
+      "exchangeSkill": "Graphic Design",
+      "sessionDate": "2026-10-12",
+      "sessionTime": "16:00",
+      "meetingType": "Online",
+      "description": "60-min split session: 30m Python loops & file automation, 30m Swiss poster grid critique.",
+      "status": "Completed",
+      "createdAt": "2026-10-06T12:00:00.000Z"
+    },
+    {
+      "_id": "663000000000000000000002",
+      "requestId": "662000000000000000000002",
+      "teacherId": "660000000000000000000003",
+      "learnerId": "660000000000000000000001",
+      "skillName": "Web Development",
+      "exchangeSkill": "Database Management",
+      "sessionDate": "2026-11-22",
+      "sessionTime": "14:30",
+      "meetingType": "In-person",
+      "description": "Innovation Hub Study Room B2 — covering REST routing and MongoDB document references.",
+      "status": "Scheduled",
+      "createdAt": "2026-11-12T10:00:00.000Z"
+    }
+  ],
+  "reviews": [
+    {
+      "_id": "664000000000000000000001",
+      "sessionId": "663000000000000000000001",
+      "reviewerId": "660000000000000000000002",
+      "reviewedUserId": "660000000000000000000001",
+      "rating": 5,
+      "comment": "Ahmed broke down Python loops and file automation so clearly. I wrote my first batch-renaming script right after our session.",
+      "createdAt": "2026-10-13T18:20:00.000Z"
+    },
+    {
+      "_id": "664000000000000000000002",
+      "sessionId": "663000000000000000000001",
+      "reviewerId": "660000000000000000000001",
+      "reviewedUserId": "660000000000000000000002",
+      "rating": 5,
+      "comment": "Sara completely transformed how I think about spacing and visual hierarchy. The live grid critique was super practical.",
+      "createdAt": "2026-10-14T09:10:00.000Z"
+    }
+  ],
+  "reports": [
+    {
+      "_id": "665000000000000000000001",
+      "reporterId": "660000000000000000000003",
+      "reportedUserId": "660000000000000000000005",
+      "reason": "Off-platform solicitation check",
+      "details": "Clarifying whether promotional links in session notes are allowed under community guidelines.",
+      "status": "Open",
+      "createdAt": "2026-11-14T13:45:00.000Z"
+    }
+  ]
+}

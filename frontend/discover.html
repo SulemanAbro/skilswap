@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discover Students — SkillSwap</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/dashboard.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside id="workspace-sidebar" class="sidebar"></aside>
+
+      <div class="workspace-main">
+        <header class="topbar">
+          <div class="topbar-left">
+            <button type="button" id="mobile-menu-toggle" class="mobile-menu-btn" aria-label="Toggle navigation menu">☰</button>
+            <div id="topbar-breadcrumb" class="breadcrumb">SkillSwap / Discover Students</div>
+          </div>
+          <a href="/matches.html" class="btn btn-primary btn-sm">View Smart Matches</a>
+        </header>
+
+        <main class="page-content">
+          <div class="page-intro">
+            <div>
+              <h1>Discover Students</h1>
+              <p>Browse peers across departments and propose a direct skill-exchange session.</p>
+            </div>
+          </div>
+
+          <div class="filter-toolbar" role="search">
+            <label for="discover-search" class="sr-only">Search students or skills</label>
+            <input
+              type="search"
+              id="discover-search"
+              placeholder="Search by student name, university, or skill (e.g., Python, Photography)..."
+            />
+            <label for="discover-department" class="sr-only">Filter by department</label>
+            <select id="discover-department">
+              <option value="">All Departments</option>
+            </select>
+            <label for="discover-type" class="sr-only">Filter by skill direction</label>
+            <select id="discover-type">
+              <option value="">All Skill Types</option>
+              <option value="Teach">Offering to Teach</option>
+              <option value="Learn">Seeking to Learn</option>
+            </select>
+          </div>
+
+          <section id="discover-grid" class="match-cards-grid"></section>
+        </main>
+      </div>
+    </div>
+
+    <dialog id="discover-request-dialog" class="ss-dialog">
+      <div class="dialog-head">
+        <h3>Propose Skill Exchange with <span id="disc-peer-name"></span></h3>
+        <button type="button" id="close-discover-dialog" class="dialog-close" aria-label="Close modal">✕</button>
+      </div>
+      <div class="dialog-body">
+        <form id="discover-request-form" class="form-grid">
+          <input type="hidden" id="disc-receiver-id" />
+          <div class="form-row-2">
+            <div class="field">
+              <label for="disc-offered-skill">Skill You Offer to Teach</label>
+              <select id="disc-offered-skill" required></select>
+            </div>
+            <div class="field">
+              <label for="disc-requested-skill">Skill You Want to Learn</label>
+              <select id="disc-requested-skill" required></select>
+            </div>
+          </div>
+          <div class="field">
+            <label for="disc-message">Message</label>
+            <textarea id="disc-message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Exchange Request</button>
+        </form>
+      </div>
+    </dialog>
+
+    <script type="module" src="/js/discover.js"></script>
+  </body>
+</html>

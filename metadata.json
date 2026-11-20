@@ -1,0 +1,6 @@
+{
+  "name": "SkillSwap",
+  "description": "Student Skill Exchange Platform — connect with university peers to teach skills you know and learn skills you want without financial transactions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning Sessions — SkillSwap</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/dashboard.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside id="workspace-sidebar" class="sidebar"></aside>
+
+      <div class="workspace-main">
+        <header class="topbar">
+          <div class="topbar-left">
+            <button type="button" id="mobile-menu-toggle" class="mobile-menu-btn" aria-label="Toggle navigation menu">☰</button>
+            <div id="topbar-breadcrumb" class="breadcrumb">SkillSwap / Learning Sessions</div>
+          </div>
+          <a href="/reviews.html" class="btn btn-secondary btn-sm">Submit Session Reviews</a>
+        </header>
+
+        <main class="page-content">
+          <div class="page-intro">
+            <div>
+              <h1>Learning Sessions</h1>
+              <p>Arrange dates, locations, and agendas for accepted skill exchanges and mark completed sessions.</p>
+            </div>
+          </div>
+
+          <div class="workspace-grid-2">
+            <section class="panel">
+              <div class="panel-head">
+                <h2>Scheduled & Completed Sessions</h2>
+              </div>
+
+              <div id="sessions-table-wrap" class="table-wrap">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th>Skill Topic</th>
+                      <th>Teacher</th>
+                      <th>Learner</th>
+                      <th>Date & Time</th>
+                      <th>Format</th>
+                      <th>Status</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                  <tbody id="sessions-tbody"></tbody>
+                </table>
+              </div>
+
+              <div id="sessions-empty" class="empty-state hidden">
+                <h3>No learning sessions yet</h3>
+                <p>Schedule a session from any accepted exchange request using the form.</p>
+                <a href="/requests.html" class="btn btn-primary btn-sm">Check Exchange Requests</a>
+              </div>
+            </section>
+
+            <aside class="panel">
+              <div class="panel-head">
+                <h2>Schedule New Session</h2>
+              </div>
+              <div id="session-form-error" class="form-error hidden" style="margin-bottom: 14px;"></div>
+              <form id="schedule-session-form" class="form-grid">
+                <div class="field">
+                  <label for="session-request-id">Accepted Exchange Request</label>
+                  <select id="session-request-id" required></select>
+                </div>
+                <div class="field">
+                  <label for="session-skill">Primary Skill Being Taught</label>
+                  <input type="text" id="session-skill" placeholder="e.g., Python Programming" required />
+                </div>
+                <div class="form-row-2">
+                  <div class="field">
+                    <label for="session-date">Date</label>
+                    <input type="date" id="session-date" required />
+                  </div>
+                  <div class="field">
+                    <label for="session-time">Time</label>
+                    <input type="time" id="session-time" value="15:00" required />
+                  </div>
+                </div>
+                <div class="field">
+                  <label for="session-type">Meeting Format</label>
+                  <select id="session-type" required>
+                    <option value="Online">Online (Video / Screen Share)</option>
+                    <option value="In-person">In-person (Campus Library / Hub)</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="session-desc">Session Agenda & Notes</label>
+                  <textarea id="session-desc" placeholder="Share room number, call link, or topics to prepare."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Schedule Learning Session</button>
+              </form>
+            </aside>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <script type="module" src="/js/sessions.js"></script>
+  </body>
+</html>
